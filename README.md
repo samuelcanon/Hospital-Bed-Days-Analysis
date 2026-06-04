@@ -98,3 +98,50 @@ with effect size.
 | 3 | Comorbidity prevalence and mean LOS             | Two-panel bar 
 | 4 | Condition burden: LOS and prior visit rate      | Combo bar 
 
+-------
+ 
+## How to Run
+ 
+1. Download the dataset from Kaggle: https://www.kaggle.com/datasets/[dataset-url]
+   Save it as: data/Length_of_Stay_Database.csv
+ 
+2. Install dependencies:
+   pip install -r requirements.txt
+ 
+3. Open and run the notebook:
+   notebooks/hospital_los_analysis.ipynb
+ 
+   Note: If running on Google Colab, update the file path in
+   Section 1 to point to your Drive location and uncomment the
+   drive.mount() line.
+ 
+-------
+ 
+## Outputs
+ 
+Pre-run outputs are in /outputs so you can review result without running the notebook:
+ 
+| File                    | Contents                                               |
+|-------------------------|--------------------------------------------------------|
+| summary_stats.csv       | Top-level metrics: mean LOS, std dev, CI, burden rates |
+| condition_analysis.csv  | Per-comorbidity mean LOS and prevalence                |
+| facility_comparison.csv | Per-facility encounter count, mean LOS, std dev        |
+ 
+-------
+ 
+## Limitations
+ 
+- Encounter level only. Same individual may appear multiple times.
+- No patient identifier (patient-level analysis is not possible).
+- Synthetic data (2012) (not generalisable to real populations).
+- prior_visit_flag is an indicator, not a verified readmission flag.
+- Facility variation may reflect patient mix, not performance.
+ 
+-------
+ 
+## Dataset Citation
+ 
+Microsoft. Hospital Length of Stay Dataset.
+https://microsoft.github.io/r-server-hospital-length-of-stay/input_data.html
+Available via Kaggle.
+ 
