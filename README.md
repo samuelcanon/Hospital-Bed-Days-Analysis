@@ -30,7 +30,7 @@ The dataset reports both. Multiplying them inverts the picture:
 | Asthma | 3.5% | 5.01 d | 17,670 | 4.4% |
 | Fibrosis & Other | 0.5% | 6.11 d | 2,927 | 0.7% |
 
-![Encounter-days by condition](outputs/chart4_bed_days.png)
+![Encounter-days by condition](charts/chart4_bed_days.png)
 
 Fibrosis has the longest stays in the dataset (6.11 days) and accounts for 2,927 encounter-days. Major Psych Disorder has stays 15% shorter and accounts for 124,540, roughly **42× more**. Rank conditions by stay length and Fibrosis comes first. Rank them by beds consumed and it comes last.
 
@@ -45,7 +45,7 @@ Fibrosis has the longest stays in the dataset (6.11 days) and accounts for 2,927
 **Condition burden predicts length of stay (the boring result).**
 Encounters with 3+ comorbidities average 5.93 days against 3.84 for the rest: a 2.09-day gap, Cohen's d = 0.911 (large). True, and unsurprising, sicker patients stay longer. It's context for the bed-days finding, not a finding in itself.
 
-![Condition burden](outputs/chart1_los_distribution.png)
+![Condition burden](charts/chart1_los_distribution.png)
 
 **Length of stay is right-skewed but tightly clustered.**
 Mean and median both 4.0 days, SD 2.36, range 1–17. Skewness = 0.63. Nearly half of encounters (46.9%) resolve within 3 days; 8.6% exceed a week. 95% CI [3.986, 4.016], narrow, because n = 100,000 makes precision cheap and effect size the only interesting question.
@@ -53,12 +53,12 @@ Mean and median both 4.0 days, SD 2.36, range 1–17. Skewness = 0.63. Nearly ha
 **Single conditions matter less than co-occurrence.**
 Mean LOS spans just 1.1 days across all 11 conditions, 5.01 (Asthma) to 6.11 (Fibrosis). But encounters carrying 3+ conditions run 2.09 days longer than those carrying fewer. How many conditions an encounter has moves LOS nearly twice as much as which one it is.
 
-![Comorbidity prevalence and mean LOS](outputs/chart3_comorbidity.png)
+![Comorbidity prevalence and mean LOS](charts/chart3_comorbidity.png)
 
 **Facility variation exists and is not interpretable here.**
 Mean LOS runs 3.27 days (Facilities A, B) to 5.16 (Facility E), a 58% spread. The dataset carries no acuity or case-mix adjustment, so this cannot be separated from patient mix. It is reported, but unexplained.
 
-![Facility comparison](outputs/chart2_facility_comparison.png)
+![Facility comparison](charts/chart2_facility_comparison.png)
  
 -------
  
@@ -108,7 +108,7 @@ A fourth column, `los_calculated`, exists only on a validation copy of the frame
 | Welch's t-test    | High vs low burden      | Unequal variances not assumed                          |
 | Cohen's d         | Effect size             | n-weighted pooled SD. Reported ahead of the p-value.   |
 | Pearson r         | `num_conditions` vs LOS | r = 0.417                                              |
-| Spearman ρ        | Same, rank-based        | ρ = 0.469 — close to Pearson, so the linear read holds |
+| Spearman ρ        | Same, rank-based        | ρ = 0.469 close to Pearson, so the linear read holds |
  
 At n = 100,000 the p-value is a formality. All results lead with effect size.
  
