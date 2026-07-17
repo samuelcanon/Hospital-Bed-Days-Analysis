@@ -66,8 +66,11 @@ Mean LOS spans just 1.1 days across all 11 conditions, 5.01 (Asthma) to 6.11 (Fi
 ![Comorbidity prevalence and mean LOS](charts/chart3_comorbidity.png)
 
 <br>
+
 **Facility variation exists and is not interpretable here.**
 Mean LOS runs 3.27 days (Facilities A, B) to 5.16 (Facility E), a 58% spread. The dataset carries no acuity or case-mix adjustment, so this cannot be separated from patient mix. It is reported, but unexplained.
+
+<br>
 
 ![Facility comparison](charts/chart2_facility_comparison.png)
  
