@@ -141,15 +141,21 @@ At n = 100,000 the p-value is a formality. All results lead with effect size.
  
 ## How to Run
  
-```bash
-pip install -r requirements.txt
-```
+1. Install the required packages:
 
-1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/aayushchou/hospital-length-of-stay-dataset-microsoft) and save as `data/Length_of_Stay_Database.csv`
-2. Open `notebooks/hospital_los_analysis.ipynb`
-3. Run all cells. Charts and CSVs write to `outputs/`.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-On Colab, update the path in Section 1 and uncomment `drive.mount()`.
+2. Download the dataset from Kaggle and save it as `data/Length_of_Stay_Database.csv`.
+
+3. Open `notebooks/hospital_los_analysis.ipynb`.
+
+4. Run all cells. The notebook saves charts and CSV outputs to the `outputs/` directory.
+
+5. If using Google Colab:
+   - Update the file path in **Section 1**.
+   - Uncomment `drive.mount()`.
  
 -------
  
