@@ -1,11 +1,10 @@
-# Which Conditions Fill the Most Hospital Beds and Why It Isn't the Longest Stays
-Analysis of 100,000 hospital encounter records. Python, pandas, scipy, etc. Exploratory workflow, data validation, and statistical framing.
+# Which Conditions Fill the Most Hospital Beds, and Why It Isn't the Longest Stays
+Descriptive analysis of 100,000 hospital encounters. Synthetic data (Microsoft, 2012) — this is a method demonstration, not a claim about any real hospital.
+
+The condition with the longest average stay consumes 0.7% of bed capacity. The condition with a near-average stay consumes 31%. If you plan capacity around stay length, you plan around the wrong thing.
  
-**Dataset:** Microsoft Hospital LOS (Kaggle), 100,000 synthetic encounter records, 28 columns, 2012.
- 
-**Source:** https://microsoft.github.io/r-server-hospital-length-of-stay/input_data.html
- 
-**Tools:** Python (pandas, matplotlib, seaborn, scipy)
+
+**Stack:** Python (pandas, matplotlib, seaborn, scipy)
  
 **Type:** Descriptive analytics only. No ml/prediction.
  
