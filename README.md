@@ -158,6 +158,13 @@ At n = 100,000 the p-value is a formality. All results lead with effect size.
    - Uncomment `drive.mount()`.
  
 -------
+
+## Future Work
+- Testing whether prevalence dominates severity on a real world data set
+- Adjusting facility variation for case mix
+- Attributing shared bed days rather than ranking them 
+
+-------
  
 ## Limitations
  
